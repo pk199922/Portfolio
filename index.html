@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Fira+Sans&family=Noto+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <!-- icons cdn -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src=""> -->
+                <p class="logo" ><span>P</span>RATIKSHA</p>
+                <!-- <p class="logo"><i class="lni lni-paddle"></i></p> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="lni lni-cross-circle" onclick="closemenu()"></i>
+                </ul>
+                <i class="lni lni-menu" onclick="openmenu( )"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full stack developer</p>
+                <h1>hi, I'm <span style="color: #ff004f;">Pratiksha</span> Tambe <br>from Mumbai Maharashtra</h1>
+                <a href="#" class="btn btn2 " style="font-size: 20px;">Hire Me</a>
+                <a href="#portfolio" class="btn btn2" style="background: transparent;font-size: 20px;">My Work</a>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img2.png" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My Name Is Pratiksha Tambe, I Am A 24-Year-Old, I Completed  B.E In Computer Engineering 
+                        from DRIEMS Neral(Mumbai University) with overall  CGPA Of 7.8.
+                        I Am Currently Learning Web Development From Career X.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>web app Development</li>
+                            <li><span>App Development</span><br>building android/ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>cloud computing</span><br>Internship at infotech pvt limited on cloud computing,
+                                kalyan.</li>
+                            <li><span>python</span><br>Internship at decotech thane based on python.</li>
+                            <li><span>React js intern</span><br>Internship at e-stone technology based on front end
+                                development.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>B.E. Computer Engineering From Mumbai University</li>
+                            <li><span>2016</span><br>HSC From Maharashtra state board of secondary & higher secondary
+                                Education</li>
+                            <li><span>2014</span><br>SSC From Maharashtra state board of secondary & higher secondary
+                                Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- services--------------- -->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="lni lni-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab nemo, ea deserunt,
+                        praesentium sit alias
+                        culpa placeat aperiam vel error quibusdam nulla perferendis sapiente omnis unde consequatur quas
+                        quam.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="lni lni-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab nemo, ea deserunt,
+                        praesentium sit alias
+                        culpa placeat aperiam vel error quibusdam nulla perferendis sapiente omnis unde consequatur quas
+                        quam.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="lni lni-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab nemo, ea deserunt,
+                        praesentium sit alias
+                        culpa placeat aperiam vel error quibusdam nulla perferendis sapiente omnis unde consequatur quas
+                        quam.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------portfolio /project---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="image not found">
+                    <div class="layer">
+                        <h3>ZEE5 Clone</h3>
+                        <p>It is ZEE5 Clone Website,Zee5 is a popular streaming platform that offers a wide range of
+                            content,
+                            including TV shows, movies, live TV channels, and original web series.
+                        </p>
+                        <a href="#"><i class="lni lni-arrow-top-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="image not found">
+                    <div class="layer">
+                        <h3>Education (website)</h3>
+                        <p>It is basically responsive website, having course details,testimonials, plan & pricing,
+                            instagram gallery, blogs & events of college. It includes homepage,login & contact page.
+                        </p>
+                        <a href="#"><i class="lni lni-arrow-top-right"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="image not found">
+                    <div class="layer">
+                        <h3>ABC</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi ex perspiciatis,ipsum, neque libero est ducimus suscipit
+                        </p>
+                        <a href="#"><i class="lni lni-arrow-top-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    
+    <!-----------------Contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="lni lni-telegram"></i>tambep115@gmail.com</p>
+                    <p><i class="lni lni-phone"></i>8669401272</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="lni lni-linkedin-original"></i></a>
+                        <a href="#"><i class="lni lni-facebook-original"></i></a>
+                        <a href="#"><i class="lni lni-instagram"></i></a>
+
+                    </div>
+                    <a href="images/CV_Pratiksha.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required >
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @pratiksha Made with <i class="lni lni-heart-fill"></i> by Pratiksha Tambe</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
